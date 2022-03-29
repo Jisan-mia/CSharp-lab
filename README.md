@@ -321,3 +321,27 @@ public class Exercise11 {
     }
 }
 ```
+// array value ascending order (iterative)
+```csharp
+using System;
+class AscendingArr{
+    public static void Main() {
+        int[] arr = new int[] {2,5, 1,8,10,4,9,5,3,6};
+        int temp;
+        
+        for(int i = 0; i < arr.Length; i++) {
+            for(int j = i+1; j < arr.Length; j++) {
+                if(arr[i] > arr[j]) {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        
+        foreach(int value in arr) {
+            Console.Write(value + " ");
+        }
+    }
+}
+```
