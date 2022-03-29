@@ -308,3 +308,16 @@ public class qEquations {
     }
 }
 ```
+// sum from 1-100 
+```csharp
+using System;
+public class Exercise11 {
+    public static void Main() {
+        int sum = 0;
+        for(int i = 1; i<=100; i++) {
+            sum+=i;
+        }
+        Console.Write("The sum is: " + sum);
+    }
+}
+```
